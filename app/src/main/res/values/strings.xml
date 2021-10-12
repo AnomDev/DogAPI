@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DogAPI</string>
+    <string name="description">You can search for any breed of dog that exists, such as: Akita, Beagle, Chow, Doberman, Eskimo, Husky, Labrador, Lhasa, Malamute, Maltese, Samoyed, Shiba, Stbernard or Wolfhound, among others.</string>
 </resources>
