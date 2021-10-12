@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     private fun showError() {
         Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
     }
-    // Este método se llamara cuando el usuario termine de escribir en el buscado y pulse ENTER.
 
+    // Este método (obligatorio) se llamara cuando el usuario termine de escribir en el buscado y pulse ENTER.
     override fun onQueryTextSubmit(query: String?): Boolean {
         if(!query.isNullOrEmpty()){
             searchByName(query.lowercase(Locale.getDefault()))
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         return true
     }
 
-    // Este método se llamara cada vez que el usuario escriba o borre UNA letra en el buscador. en este caso no nos interesa asi que no trabajamos con él. Pide un booleano, le damos un true y listo.
+    // Este método (obligatorio) se llamara cada vez que el usuario escriba o borre UNA letra en el buscador. en este caso no nos interesa asi que no trabajamos con él. Pide un booleano, le damos un true y listo.
     override fun onQueryTextChange(newText: String?): Boolean {
         return true
     }
